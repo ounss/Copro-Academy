@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Copro Academy | Formations en gestion de copropriétés</title>
+    <meta name="description"
+        content="Copro Academy - Expert en formations et accompagnement pour la gestion de copropriétés. Formations certifiées, actualités juridiques et support professionnel.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/base/icon/base_icon_transparent_background.png">
+
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="css/00-reset.css">
+    <link rel="stylesheet" href="css/01-variables.css">
+    <link rel="stylesheet" href="css/02-base.css">
+    <link rel="stylesheet" href="css/03-layout.css">
+    <link rel="stylesheet" href="css/04-components.css">
+    <link rel="stylesheet" href="css/05-utilities.css">
+    <link rel="stylesheet" href="css/06-pages.css">
+</head>
+
+<body>
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+        <a href="#main-nav" class="skip-link">Aller à la navigation</a>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" role="banner">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo-link" aria-label="Retour à l'accueil">
+                <img src="assets/base/full/base_logo_transparent_background.png" alt="Copro Academy Logo"
+                    class="navbar__logo">
+            </a>
+
+            <button class="navbar__burger" aria-label="Menu de navigation" aria-expanded="false">
+                &#9776;
+            </button>
+
+            <n class="navbar__nav" role="navigation" aria-label="Navigation principale" id="main-nav">
+                <a href="index.html" class="navbar__link navbar__link--active">Accueil</a>
+                <a href="articles.html" class="navbar__link">Articles & Événements</a>
+                <a href="formation.html" class="navbar__link">Formation</a>
+                <a href="contact.html" class="navbar__link">Contact</a>
+                </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section avec Carousel -->
+        <section class="hero" aria-label="Présentation principale">
+            <img src="assets/collegues-de-taille-moyenne-apprenant.jpg" class="hero__image hero__image--active"
+                alt="Formation en gestion de copropriété" loading="eager">
+            <img src="assets/agent-immobilier-masculin-faisant-des-affaires-et-montrant-la-maison-a-un-couple-d-acheteurs-potentiels.jpg"
+                class="hero__image" alt="Agent immobilier" loading="lazy">
+            <img src="assets/tenir-la-cle-a-la-main-a-l-exterieur.jpg" class="hero__image" alt="Clés de propriété"
+                loading="lazy">
+
+            <div class="hero__overlay" aria-hidden="true"></div>
+
+            <div class="hero__content">
+                <h1 class="hero__title">Bienvenue chez Copro Academy</h1>
+                <h2 class="hero__subtitle">Votre partenaire en gestion de copropriétés</h2>
+                <p class="hero__description">Formations professionnelles, actualités juridiques et accompagnement
+                    spécialisé pour les experts de l'immobilier</p>
+
+                <div class="hero__actions">
+                    <a href="formation.html" class="btn btn--primary btn--lg">Découvrir nos formations</a>
+                    <a href="articles.html" class="btn btn--secondary btn--lg">Actualités & Événements</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Section Services -->
+    <section class="container mt-3xl" aria-labelledby="services-title">
+        <h2 id="services-title" class="text-center mb-2xl">Nos Services</h2>
+
+        <div class="grid grid-cols-auto gap-xl">
+            <article class="card">
+                <img src="assets/hero.jpeg" alt="Gestion de copropriétés" loading="lazy" class="card__image">
+                <div class="card__body">
+                    <h3 class="card__title">Gestion de copropriétés</h3>
+                    <p class="card__content">Accompagnement professionnel et outils adaptés pour optimiser la
+                        gestion de votre copropriété.</p>
+                    <a href="contact.html" class="btn btn--primary">En savoir plus</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/hero.jpeg" alt="Formations certifiées" loading="lazy" class="card__image">
+                <div class="card__body">
+                    <h3 class="card__title">Formations certifiées</h3>
+                    <p class="card__content">Maîtrisez les aspects juridiques et techniques grâce à nos programmes
+                        de formation reconnus.</p>
+                    <a href="formation.html" class="btn btn--primary">Voir les formations</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/hero.jpeg" alt="Actualités et webinaires" loading="lazy" class="card__image">
+                <div class="card__body">
+                    <h3 class="card__title">Actualités & Webinaires</h3>
+                    <p class="card__content">Restez informé des évolutions législatives et participez à nos sessions
+                        d'information.</p>
+                    <a href="articles.html" class="btn btn--primary">Explorer</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Articles récents -->
+    <section class="container mt-3xl" aria-labelledby="recent-articles">
+        <h2 id="recent-articles" class="text-center mb-2xl">Articles & Événements récents</h2>
+
+        <div class="grid grid-cols-auto gap-xl">
+            <article class="card">
+                <div class="badge badge--error" style="position: absolute; top: 1rem; right: 1rem; z-index: 1;">À la
+                    une</div>
+                <img src="assets/hero.jpeg" alt="Nouvelle réglementation copropriété 2025" loading="lazy"
+                    class="card__image">
+                <div class="card__body">
+                    <div class="article-meta">
+                        <span class="article-category">Juridique</span>
+                        <time class="article-date" datetime="2025-01-15">15 janvier 2025</time>
+                    </div>
+                    <h3 class="card__title">Nouvelle réglementation sur les charges de copropriété</h3>
+                    <p class="card__content">Découvrez les changements majeurs introduits par la nouvelle
+                        législation belge concernant la répartition et la gestion des charges en copropriété.</p>
+                    <div class="flex flex-wrap gap-sm mb-lg">
+                        <span class="tag">Charges</span>
+                        <span class="tag">Législation</span>
+                        <span class="tag">2025</span>
+                    </div>
+                    <a href="article.detail.html?id=1" class="btn btn--primary">Lire l'article complet</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="badge badge--warning" style="position: absolute; top: 1rem; right: 1rem; z-index: 1;">
+                    Événement</div>
+                <img src="assets/hero.jpeg" alt="Webinaire gestion énergétique copropriété" loading="lazy"
+                    class="card__image">
+                <div class="card__body">
+                    <div class="article-meta">
+                        <span class="article-category bg-warning text-white">Webinaire</span>
+                        <time class="article-date" datetime="2025-02-20">20 février 2025 - 14h00</time>
+                    </div>
+                    <h3 class="card__title">Webinaire : Gestion énergétique en copropriété</h3>
+                    <p class="card__content">Rejoignez-nous pour un webinaire spécialisé sur l'optimisation
+                        énergétique des bâtiments.</p>
+                    <div class="bg-gray-50 p-md rounded mb-lg">
+                        <p class="mb-xs"><strong>Durée :</strong> 2h</p>
+                        <p class="mb-xs"><strong>Places :</strong> 50 participants</p>
+                        <p class="mb-0"><strong>Prix :</strong> Gratuit</p>
+                    </div>
+                    <a href="contact.html?sujet=evenement" class="btn btn--primary">S'inscrire</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/hero.jpeg" alt="Guide assemblée générale copropriété" loading="lazy"
+                    class="card__image">
+                <div class="card__body">
+                    <div class="article-meta">
+                        <span class="article-category">Guide pratique</span>
+                        <time class="article-date" datetime="2025-01-10">10 janvier 2025</time>
+                    </div>
+                    <h3 class="card__title">Guide pratique : Organiser une assemblée générale efficace</h3>
+                    <p class="card__content">Méthodologie complète pour préparer et animer une assemblée générale de
+                        copropriété réussie.</p>
+                    <div class="flex flex-wrap gap-sm mb-lg">
+                        <span class="tag">AG</span>
+                        <span class="tag">Pratique</span>
+                    </div>
+                    <a href="article.detail.html?id=2" class="btn btn--primary">Lire l'article</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FAQ rapide -->
+    <section class="full-width bg-gray-50 py-3xl" aria-labelledby="faq-title">
+        <div class="container">
+            <h2 id="faq-title" class="text-center mb-2xl">Questions fréquentes</h2>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <details class="faq-item">
+                    <summary class="faq-summary">Comment s'inscrire à une formation ?</summary>
+                    <div class="faq-content">
+                        <p>Vous pouvez vous inscrire directement via notre formulaire de contact en sélectionnant
+                            "Inscription à une formation". Nous vous recontacterons pour finaliser votre inscription
+                            et vous communiquer les modalités pratiques.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-summary">Vos formations sont-elles certifiées ?</summary>
+                    <div class="faq-content">
+                        <p>Oui, toutes nos formations sont certifiées et reconnues dans le cadre de la formation
+                            professionnelle continue. Elles donnent droit à des attestations de formation.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-summary">Proposez-vous des formations sur mesure ?</summary>
+                    <div class="faq-content">
+                        <p>Absolument ! Nous pouvons adapter nos programmes à vos besoins spécifiques.
+                            Contactez-nous pour discuter de vos objectifs et nous élaborerons une solution
+                            personnalisée.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-summary">Dans quelles régions intervenez-vous ?</summary>
+                    <div class="faq-content">
+                        <p>Nous intervenons principalement en région de Bruxelles-Capitale et en Wallonie. Pour des
+                            formations sur site, nous nous déplaçons selon la taille du groupe.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section class="formation-benefits full-width-section" aria-labelledby="benefits-title">
+        <div class="formation-benefits-content">
+            <h2 id="benefits-title" class="section-title">Pourquoi choisir Copro Academy&nbsp;?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Formations certifiées</h3>
+                    <p>Nos formations sont reconnues et donnent droit à des certificats de formation continue.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚖️</div>
+                    <h3>Expertise juridique</h3>
+                    <p>Nos formateurs sont des experts reconnus en droit immobilier et gestion de copropriétés.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔄</div>
+                    <h3>Mise à jour constante</h3>
+                    <p>Nos contenus sont régulièrement actualisés selon les évolutions législatives.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Accompagnement personnalisé</h3>
+                    <p>Support continu et conseils adaptés à vos besoins spécifiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="newsletter__title">Restez informé</h2>
+            <p class="newsletter__description">Recevez nos dernières actualités et annonces d'événements directement
+                dans votre boîte mail</p>
+
+            <form class="newsletter__form" id="newsletterForm">
+                <div class="newsletter__input-group">
+                    <input type="email" placeholder="Votre adresse email" required class="newsletter__input"
+                        aria-label="Adresse email pour newsletter">
+                    <button type="submit" class="btn btn--primary">S'abonner</button>
+                </div>
+                <small class="newsletter__help">Nous respectons votre vie privée. Pas de spam, désinscription à tout
+                    moment.</small>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3>Navigation</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="articles.html">Articles & Événements</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3>Informations légales</h3>
+                <ul class="footer__links">
+                    <li><a href="condition.generale.html">Conditions générales</a></li>
+                    <li><a href="politique.confidentialite.html">Politique de confidentialité</a></li>
+                    <li><a href="politique.confidentialite.html">Mentions légales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3>Suivez-nous</h3>
+                <div class="footer__social">
+                    <a href="#" aria-label="Facebook">
+                        <img src="assets/logo_réseaux_sociaux/facebook-svgrepo-com-3.svg" alt="Facebook">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="assets/logo_réseaux_sociaux/instagram-svgrepo-com-2.svg" alt="Instagram">
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="assets/logo_réseaux_sociaux/linkedin-svgrepo-com.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__section text-center">
+                <img src="assets/color1/full/white_logo_color1_background.png" alt="Logo Copro Academy"
+                    style="max-height: 80px; width: auto;">
+            </div>
+        </div>
+
+        <div class="footer__separator"></div>
+
+        <div class="footer__copyright">
+
+            <div class="flex justify-center gap-lg flex-wrap mt-sm">
+                <span>Email : <a href="mailto:CoproAcademy@contact.be">CoproAcademy@contact.be</a></span>
+                <span>Téléphone : <a href="tel:+32510080001">+32 510 08 00 01</a></span>
+                <span>Adresse : 292B Rue de Stalle, 1180 Uccle, Belgique</span>
+
+            </div>
+            <p>&copy; 2025 Copro Academy - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

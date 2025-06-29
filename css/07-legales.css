@@ -1,0 +1,371 @@
+/**
+ * COPRO ACADEMY - Legal Pages Styles
+ * Styles spécifiques pour les pages légales et documentaires
+ */
+
+/* ===================================
+   LEGAL PAGES - GENERAL LAYOUT
+   =================================== */
+
+/* Container spécifique pour les pages légales */
+.container {
+  max-width: 900px; /* Plus étroit pour une meilleure lisibilité */
+  margin: var(--space-xl) auto;
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--color-white);
+  border-radius: var(--radius-base);
+  box-shadow: var(--shadow-base);
+  line-height: 1.7;
+}
+
+/* Titre principal des pages légales */
+.container h1 {
+  font-size: var(--text-4xl);
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 3px solid var(--color-primary);
+  font-weight: var(--font-bold);
+}
+
+/* ===================================
+     SECTIONS ET HIÉRARCHIE
+     =================================== */
+
+/* Sections principales */
+.container section {
+  margin-bottom: var(--space-3xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.container section:last-child {
+  border-bottom: none;
+  margin-bottom: var(--space-xl);
+}
+
+/* Titres de niveau 2 */
+.container h2 {
+  font-size: var(--text-2xl);
+  color: var(--color-primary);
+  margin: var(--space-xl) 0 var(--space-lg) 0;
+  font-weight: var(--font-bold);
+  position: relative;
+  padding-left: var(--space-md);
+}
+
+.container h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+/* Titres de niveau 3 */
+.container h3 {
+  font-size: var(--text-xl);
+  color: var(--color-primary-dark);
+  margin: var(--space-lg) 0 var(--space-md) 0;
+  font-weight: var(--font-semibold);
+}
+
+/* Titres de niveau 4 */
+.container h4 {
+  font-size: var(--text-lg);
+  color: var(--color-gray-900);
+  margin: var(--space-md) 0 var(--space-sm) 0;
+  font-weight: var(--font-semibold);
+}
+
+/* ===================================
+     CONTENU ET TYPOGRAPHIE
+     =================================== */
+
+/* Paragraphes */
+.container p {
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+  color: var(--color-gray-900);
+  text-align: justify;
+}
+
+/* Paragraphes avec emphasis (notes, dates) */
+.container p em {
+  color: var(--color-gray-500);
+  font-style: italic;
+  font-size: var(--text-sm);
+}
+
+/* Texte en gras */
+.container strong {
+  color: var(--color-primary);
+  font-weight: var(--font-bold);
+}
+
+/* ===================================
+     LISTES
+     =================================== */
+
+/* Listes générales */
+.container ul,
+.container ol {
+  margin: var(--space-md) 0;
+  padding-left: var(--space-xl);
+}
+
+.container li {
+  margin-bottom: var(--space-sm);
+  line-height: 1.6;
+  color: var(--color-gray-900);
+}
+
+/* Listes imbriquées */
+.container ul ul,
+.container ol ol {
+  margin: var(--space-sm) 0;
+  padding-left: var(--space-lg);
+}
+
+/* Puces personnalisées pour les listes */
+.container ul li {
+  position: relative;
+  padding-left: var(--space-sm);
+}
+
+.container ul li::before {
+  content: "▪";
+  color: var(--color-primary);
+  font-weight: var(--font-bold);
+  position: absolute;
+  left: -var(--space-md);
+}
+
+/* ===================================
+     INFORMATIONS DE CONTACT
+     =================================== */
+
+/* Blocs d'informations importantes */
+.container p:has(strong:first-child) {
+  background: var(--color-gray-50);
+  padding: var(--space-md);
+  border-radius: var(--radius-base);
+  border-left: 4px solid var(--color-primary);
+  margin: var(--space-lg) 0;
+}
+
+/* Informations de contact spécifiques */
+.contact-info {
+  background: var(--color-gray-50);
+  padding: var(--space-lg);
+  border-radius: var(--radius-base);
+  border-left: 4px solid var(--color-primary);
+  margin: var(--space-xl) 0;
+}
+
+.contact-info p {
+  margin-bottom: var(--space-xs);
+  text-align: left;
+}
+
+/* ===================================
+     LIENS
+     =================================== */
+
+.container a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-weight: var(--font-medium);
+  transition: color var(--transition-fast);
+}
+
+.container a:hover {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+/* ===================================
+     MÉTADONNÉES (dates, versions)
+     =================================== */
+
+/* Informations de bas de page */
+.container > p:last-child,
+.container > p:nth-last-child(2) {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--color-gray-500);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-gray-100);
+  font-style: italic;
+}
+
+/* ===================================
+     BOÎTES SPÉCIALES
+     =================================== */
+
+/* Boîte d'information importante */
+.info-box {
+  background: #f0f9ff;
+  border: 1px solid #3498db;
+  border-left: 4px solid #3498db;
+  padding: var(--space-lg);
+  border-radius: var(--radius-base);
+  margin: var(--space-xl) 0;
+}
+
+.info-box h4 {
+  color: #2563eb;
+  margin-top: 0;
+}
+
+/* Boîte d'avertissement */
+.warning-box {
+  background: #fff8e1;
+  border: 1px solid #ff9800;
+  border-left: 4px solid #ff9800;
+  padding: var(--space-lg);
+  border-radius: var(--radius-base);
+  margin: var(--space-xl) 0;
+}
+
+.warning-box h4 {
+  color: #f57c00;
+  margin-top: 0;
+}
+
+/* ===================================
+     RESPONSIVE DESIGN
+     =================================== */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    margin: var(--space-lg) auto;
+    padding: var(--space-lg) var(--space-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: var(--space-md) auto;
+    padding: var(--space-md);
+    border-radius: 0;
+  }
+
+  .container h1 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-xl);
+  }
+
+  .container h2 {
+    font-size: var(--text-xl);
+    margin: var(--space-lg) 0 var(--space-md) 0;
+  }
+
+  .container p {
+    text-align: left; /* Supprime la justification sur mobile */
+  }
+
+  .container ul,
+  .container ol {
+    padding-left: var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: var(--space-sm);
+  }
+
+  .container h1 {
+    font-size: var(--text-2xl);
+  }
+
+  .container h2 {
+    font-size: var(--text-lg);
+    padding-left: var(--space-sm);
+  }
+
+  .container h2::before {
+    width: 3px;
+  }
+}
+
+/* ===================================
+     PRINT STYLES
+     =================================== */
+
+@media print {
+  .container {
+    max-width: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+  }
+
+  .container h1 {
+    color: black;
+    border-bottom-color: black;
+  }
+
+  .container h2 {
+    color: black;
+  }
+
+  .container h2::before {
+    background: black;
+  }
+
+  .container a {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .container p:has(strong:first-child),
+  .info-box,
+  .warning-box {
+    border-color: black;
+    background: white;
+  }
+}
+
+/* ===================================
+     NAVIGATION BREADCRUMB POUR PAGES LÉGALES
+     =================================== */
+
+.legal-breadcrumb {
+  max-width: 900px;
+  margin: var(--space-lg) auto 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.legal-breadcrumb nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-gray-500);
+  margin-bottom: var(--space-md);
+}
+
+.legal-breadcrumb a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: var(--font-medium);
+}
+
+.legal-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.legal-breadcrumb span::before {
+  content: ">";
+  margin: 0 var(--space-xs);
+  color: var(--color-gray-400);
+}

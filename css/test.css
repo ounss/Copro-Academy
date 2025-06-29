@@ -1,0 +1,68 @@
+/* ========== Masonry CSS Only ========== */
+
+/* 1. The grid container */
+.grid-container {
+  display: grid;
+  /* auto-fill as many 300px-wide columns as will fit */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* each “row” track is 10px high; spans will multiply this */
+  grid-auto-rows: 10px;
+  gap: 15px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* 2. The cards */
+.grid-container .card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  border-radius: var(--radius-base);
+  box-shadow: var(--shadow-base);
+  overflow: hidden;
+  /* default span = 25 rows → 25 × 10px = 250px minimum,
+     plus whatever height content adds (min-height:300px catches too-short ones) */
+  grid-row: span 25;
+  min-height: 300px;
+  height: fit-content;
+}
+
+/* 3. Size variants (match your image/content heights exactly) */
+.grid-container .card.card-small {
+  grid-row: span 35;
+} /* 350px image + content */
+.grid-container .card.card-medium {
+  grid-row: span 45;
+} /* 450px image + content */
+.grid-container .card.card-tall {
+  grid-row: span 55;
+} /* 550px image + content */
+.grid-container .card.card-extra-tall {
+  grid-row: span 65;
+} /* 650px image + content */
+
+/* 4. Ensure images size consistently */
+.grid-container .card img {
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+/* match the heights you used in JS version */
+.grid-container .card.card-small img {
+  height: 160px;
+}
+.grid-container .card.card-medium img {
+  height: 200px;
+}
+.grid-container .card.card-tall img {
+  height: 240px;
+}
+.grid-container .card.card-wide img {
+  height: 180px;
+}
+
+/* 5. Prevent breaks inside cards if you ever switch to multi-column */
+.card {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}

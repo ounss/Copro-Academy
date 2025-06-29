@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations - Copro Academy | Formation professionnelle en gestion de copropriétés</title>
+    <meta name="description"
+        content="Découvrez nos formations certifiées en gestion de copropriétés. Programmes adaptés aux professionnels de l'immobilier et conformes à la législation belge.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/base/icon/base_icon_transparent_background.png">
+
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="css/00-reset.css">
+    <link rel="stylesheet" href="css/01-variables.css">
+    <link rel="stylesheet" href="css/02-base.css">
+    <link rel="stylesheet" href="css/03-layout.css">
+    <link rel="stylesheet" href="css/04-components.css">
+    <link rel="stylesheet" href="css/05-utilities.css">
+    <link rel="stylesheet" href="css/06-pages.css">
+</head>
+
+<body>
+    <div class="skip-links">
+        <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+        <a href="#main-nav" class="skip-link">Aller à la navigation</a>
+    </div>
+
+    <header class="navbar" role="banner">
+        <div class="navbar__container">
+            <a href="index.html" class="navbar__logo-link" aria-label="Retour à l'accueil">
+                <img src="assets/base/full/base_logo_transparent_background.png" alt="Copro Academy Logo"
+                    class="navbar__logo">
+            </a>
+
+            <button class="navbar__burger" aria-label="Menu de navigation" aria-expanded="false">
+                &#9776;
+            </button>
+
+            <n class="navbar__nav" role="navigation" aria-label="Navigation principale" id="main-nav">
+                <a href="index.html" class="navbar__link">Accueil</a>
+                <a href="articles.html" class="navbar__link">Articles & Événements</a>
+                <a href="formation.html" class="navbar__link navbar__link--active">Formation</a>
+                <a href="contact.html" class="navbar__link">Contact</a>
+                </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <h1 class="text-center mt-xl mb-lg text-4xl font-bold">Nos Formations</h1>
+
+        <!-- Section Introduction -->
+        <section class="container mb-xl" aria-labelledby="intro-title">
+            <div class="card p-xl text-center">
+                <h2 id="intro-title" class="mb-md">Formation professionnelle en gestion de copropriétés</h2>
+                <p class="mb-0">
+                    Copro Academy propose des formations certifiées et reconnues pour les professionnels de
+                    l'immobilier.
+                    Nos programmes sont conçus pour répondre aux exigences du secteur et aux évolutions législatives.
+                </p>
+            </div>
+        </section>
+
+        <!-- Liste des formations -->
+        <section class="container mb-xl" aria-labelledby="formations-title">
+            <h2 id="formations-title" class="text-center mb-2xl">Catalogue de formations</h2>
+
+            <!-- Filtres de formations -->
+            <div class="filters mb-xl" role="group" aria-label="Filtres des formations">
+                <button class="filter-btn active" data-type="all">Toutes les formations</button>
+                <button class="filter-btn" data-type="beginner">Débutant</button>
+                <button class="filter-btn" data-type="intermediate">Intermédiaire</button>
+                <button class="filter-btn" data-type="advanced">Avancé</button>
+            </div>
+
+            <div class="grid grid-cols-auto gap-xl" id="formationsContainer">
+                <!-- Formation 1 -->
+                <article class="card formation-card" data-type="beginner" data-level="Débutant">
+                    <img src="assets/hero.jpeg" alt="Formation introduction à la gestion de copropriété" loading="lazy"
+                        class="card__image">
+                    <div class="card__body">
+                        <div class="badge badge--primary mb-md">Débutant</div>
+                        <h3 class="card__title">Introduction à la gestion de copropriété</h3>
+
+                        <div class="bg-gray-50 p-md rounded mb-md">
+                            <p class="text-sm mb-xs"><strong>Durée :</strong> 2 jours (14h)</p>
+                            <p class="text-sm mb-xs"><strong>Date :</strong> 15 septembre 2025</p>
+                            <p class="text-sm mb-0"><strong>Prix :</strong> 450€ HT</p>
+                        </div>
+
+                        <p class="card__content">Formation de base pour comprendre les enjeux de la gestion collective
+                            et acquérir les
+                            fondamentaux juridiques et pratiques.</p>
+
+                        <div class="formation-objectives mb-lg">
+                            <h4 class="text-primary mb-sm">Objectifs :</h4>
+                            <ul class="text-sm">
+                                <li>Maîtriser le cadre légal belge</li>
+                                <li>Comprendre les rôles et responsabilités</li>
+                                <li>Gérer les assemblées générales</li>
+                            </ul>
+                        </div>
+
+                        <a href="formation.detail.html?id=1" class="btn btn--primary w-full">Voir les détails</a>
+                    </div>
+                </article>
+
+                <!-- Formation 2 -->
+                <article class="card formation-card" data-type="intermediate" data-level="Intermédiaire">
+                    <img src="assets/hero.jpeg" alt="Formation gestion financière de copropriété" loading="lazy"
+                        class="card__image">
+                    <div class="card__body">
+                        <div class="badge badge--warning mb-md">Intermédiaire</div>
+                        <h3 class="card__title">Gestion financière de copropriété</h3>
+
+                        <div class="bg-gray-50 p-md rounded mb-md">
+                            <p class="text-sm mb-xs"><strong>Durée :</strong> 3 jours (21h)</p>
+                            <p class="text-sm mb-xs"><strong>Date :</strong> 22 octobre 2025</p>
+                            <p class="text-sm mb-0"><strong>Prix :</strong> 650€ HT</p>
+                        </div>
+
+                        <p class="card__content">Approfondissement des aspects financiers : budgets, comptes,
+                            provisions, et gestion des
+                            impayés.</p>
+
+                        <div class="formation-objectives mb-lg">
+                            <h4 class="text-primary mb-sm">Objectifs :</h4>
+                            <ul class="text-sm">
+                                <li>Élaborer et suivre un budget</li>
+                                <li>Gérer les provisions et fonds</li>
+                                <li>Traiter les impayés efficacement</li>
+                            </ul>
+                        </div>
+
+                        <a href="formation.detail.html?id=2" class="btn btn--primary w-full">Voir les détails</a>
+                    </div>
+                </article>
+
+                <!-- Formation 3 -->
+                <article class="card formation-card" data-type="advanced" data-level="Avancé">
+                    <img src="assets/hero.jpeg" alt="Formation contentieux et médiation" loading="lazy"
+                        class="card__image">
+                    <div class="card__body">
+                        <div class="badge badge--error mb-md">Avancé</div>
+                        <h3 class="card__title">Contentieux et médiation en copropriété</h3>
+
+                        <div class="bg-gray-50 p-md rounded mb-md">
+                            <p class="text-sm mb-xs"><strong>Durée :</strong> 2 jours (14h)</p>
+                            <p class="text-sm mb-xs"><strong>Date :</strong> 18 novembre 2025</p>
+                            <p class="text-sm mb-0"><strong>Prix :</strong> 550€ HT</p>
+                        </div>
+
+                        <p class="card__content">Gestion des conflits, procédures contentieuses et techniques de
+                            médiation adaptées aux
+                            copropriétés.</p>
+
+                        <div class="formation-objectives mb-lg">
+                            <h4 class="text-primary mb-sm">Objectifs :</h4>
+                            <ul class="text-sm">
+                                <li>Prévenir et gérer les conflits</li>
+                                <li>Maîtriser les procédures judiciaires</li>
+                                <li>Utiliser la médiation efficacement</li>
+                            </ul>
+                        </div>
+
+                        <a href="formation.detail.html?id=3" class="btn btn--primary w-full">Voir les détails</a>
+                    </div>
+                </article>
+
+                <!-- Formation 4 -->
+                <article class="card formation-card" data-type="beginner" data-level="Débutant">
+                    <img src="assets/hero.jpeg" alt="Formation réglementation énergétique" loading="lazy"
+                        class="card__image">
+                    <div class="card__body">
+                        <div class="badge badge--primary mb-md">Débutant</div>
+                        <h3 class="card__title">Réglementation énergétique et travaux</h3>
+
+                        <div class="bg-gray-50 p-md rounded mb-md">
+                            <p class="text-sm mb-xs"><strong>Durée :</strong> 1 jour (7h)</p>
+                            <p class="text-sm mb-xs"><strong>Date :</strong> 12 décembre 2025</p>
+                            <p class="text-sm mb-0"><strong>Prix :</strong> 320€ HT</p>
+                        </div>
+
+                        <p class="card__content">Comprendre les obligations énergétiques et la gestion des travaux
+                            d'amélioration dans les
+                            copropriétés.</p>
+
+                        <div class="formation-objectives mb-lg">
+                            <h4 class="text-primary mb-sm">Objectifs :</h4>
+                            <ul class="text-sm">
+                                <li>Connaître la réglementation PEB</li>
+                                <li>Organiser les travaux énergétiques</li>
+                                <li>Optimiser les aides et subventions</li>
+                            </ul>
+                        </div>
+
+                        <a href="formation.detail.html?id=4" class="btn btn--primary w-full">Voir les détails</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="formation-benefits full-width-section" aria-labelledby="benefits-title">
+            <div class="formation-benefits-content">
+                <h2 id="benefits-title" class="section-title">Pourquoi choisir Copro Academy&nbsp;?</h2>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎓</div>
+                        <h3>Formations certifiées</h3>
+                        <p>Nos formations sont reconnues et donnent droit à des certificats de formation continue.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚖️</div>
+                        <h3>Expertise juridique</h3>
+                        <p>Nos formateurs sont des experts reconnus en droit immobilier et gestion de copropriétés.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🔄</div>
+                        <h3>Mise à jour constante</h3>
+                        <p>Nos contenus sont régulièrement actualisés selon les évolutions législatives.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🤝</div>
+                        <h3>Accompagnement personnalisé</h3>
+                        <p>Support continu et conseils adaptés à vos besoins spécifiques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section CTA -->
+        <section class="newsletter">
+            <div class="container text-center">
+                <h2 class="newsletter__title">Prêt à vous former ?</h2>
+                <p class="newsletter__description">Rejoignez nos formations et développez votre expertise en gestion de
+                    copropriétés</p>
+                <a href="contact.html?sujet=formation" class="btn btn--primary btn--lg">Demander des informations</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3>Navigation</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="articles.html">Articles & Événements</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3>Informations légales</h3>
+                <ul class="footer__links">
+                    <li><a href="#cgv">Conditions générales</a></li>
+                    <li><a href="#privacy">Politique de confidentialité</a></li>
+                    <li><a href="#mentions">Mentions légales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h3>Suivez-nous</h3>
+                <div class="footer__social">
+                    <a href="#" aria-label="Facebook">
+                        <img src="assets/logo_réseaux_sociaux/facebook-svgrepo-com-3.svg" alt="Facebook">
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <img src="assets/logo_réseaux_sociaux/instagram-svgrepo-com-2.svg" alt="Instagram">
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="assets/logo_réseaux_sociaux/linkedin-svgrepo-com.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__section text-center">
+                <img src="assets/color1/full/white_logo_color1_background.png" alt="Logo Copro Academy"
+                    style="max-height: 80px; width: auto;">
+            </div>
+        </div>
+
+        <div class="footer__separator"></div>
+
+        <div class="footer__copyright">
+            <p>&copy; 2025 Copro Academy - Tous droits réservés</p>
+            <div class="flex justify-center gap-lg flex-wrap mt-sm">
+                <span>Email : <a href="mailto:CoproAcademy@contact.be">CoproAcademy@contact.be</a></span>
+                <span>Téléphone : <a href="tel:+32510080001">+32 510 08 00 01</a></span>
+                <span>Adresse : 292B Rue de Stalle, 1180 Uccle, Belgique</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
